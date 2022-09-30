@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Tempo de geração: 01-Out-2022 às 01:14
+-- Tempo de geração: 01-Out-2022 às 01:46
 -- Versão do servidor: 10.4.21-MariaDB
 -- versão do PHP: 7.4.23
 
@@ -31,6 +31,15 @@ CREATE TABLE `editora` (
   `codigo_editora` int(11) DEFAULT NULL,
   `nome_editora` varchar(120) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Extraindo dados da tabela `editora`
+--
+
+INSERT INTO `editora` (`codigo_editora`, `nome_editora`) VALUES
+(1, 'Viena'),
+(2, 'Livro Bom'),
+(3, 'Leiba Bem');
 
 -- --------------------------------------------------------
 
@@ -82,6 +91,24 @@ CREATE TABLE `subgeneros` (
   `nome` varchar(120) DEFAULT NULL,
   `codigogenero` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Extraindo dados da tabela `subgeneros`
+--
+
+INSERT INTO `subgeneros` (`cod`, `nome`, `codigogenero`) VALUES
+(1, 'História', 4),
+(2, 'Matemática', 4),
+(3, 'Literatura Infantojuvenil', 2),
+(1, 'História', 4),
+(2, 'Matemática', 4),
+(3, 'Literatura Infantojuvenil', 2),
+(4, 'Literatura Brasileira', 2),
+(5, 'Literatura Estrangeira', 2),
+(6, 'Mangá', 5),
+(7, 'Gibi', 5),
+(8, 'Autobiografia', 1),
+(9, 'Combater Ansiedade', 3);
 
 --
 -- Índices para tabelas despejadas
